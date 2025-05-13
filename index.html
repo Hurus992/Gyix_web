@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorsport Trainer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #fcb900;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .btn {
+      background: #fcb900;
+      color: #111;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #111;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #fcb900;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      background: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 280px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Motorsport Trainer</h1>
+    <p>Erőnléti edzés, ami a pályán is számít</p>
+    <a href="#contact" class="btn">Időpontot foglalok</a>
+  </header>
+
+  <!-- Rólam -->
+  <section>
+    <h2>Bemutatkozás</h2>
+    <p>
+      2025-ben szereztem meg testépítő- és fitness edzői képesítésem, de a célom mindig is az volt,
+      hogy motorsport-specifikus sportolóknak segítsek: nyakerő, fókusz, reakció, teljesítmény.
+    </p>
+  </section>
+
+  <!-- Szolgáltatások -->
+  <section>
+    <h2>Szolgáltatások</h2>
+    <div class="cards">
+      <div class="card">Nyak- és törzsstabilitás</div>
+      <div class="card">Reakcióidő-fejlesztés</div>
+      <div class="card">Reflex és mentális fókusz</div>
+      <div class="card">Mobilitás és sérülésmegelőzés</div>
+    </div>
+  </section>
+
+  <!-- Csomagok -->
+  <section>
+    <h2>Edzéscsomagok</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>START</h3>
+        <p>Heti 2 edzésterv</p>
+        <p>Alap core + nyak</p>
+        <strong>29.900 Ft / hó</strong>
+      </div>
+      <div class="card">
+        <h3>PRO</h3>
+        <p>Heti 3-4 edzésterv</p>
+        <p>Online konzultáció</p>
+        <strong>49.900 Ft / hó</strong>
+      </div>
+      <div class="card">
+        <h3>RACE</h3>
+        <p>Versenynaptárhoz igazítva</p>
+        <p>Korlátlan támogatás</p>
+        <strong>74.900 Ft / hó</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vélemények -->
+  <section>
+    <h2>Visszajelzések</h2>
+    <blockquote>“A nyakedzés óriási különbséget jelentett számomra.” – Tamás, gokartversenyző</blockquote>
+    <blockquote>“Reakcióim gyorsabbak lettek, jobban koncentrálok.” – Gergő, rally navigátor</blockquote>
+  </section>
+
+  <!-- Kapcsolat -->
+  <section id="contact">
+    <h2>Kapcsolat</h2>
+    <p>Email: <a href="mailto:info@motorsporttrainer.hu">info@motorsporttrainer.hu</a></p>
+    <p>Instagram: <a href="https://instagram.com/motorsporttrainer">@motorsporttrainer</a></p>
+    <form>
+      <input type="text" placeholder="Név" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="Üzenet"></textarea><br><br>
+      <button type="submit" class="btn">Küldés</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Motorsport Trainer – Minden jog fenntartva
+  </footer>
+
+</body>
+</html>
