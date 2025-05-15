@@ -4,90 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motorsport Trainer</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #111;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      background: url('hero-image.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #fcb900;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-      text-align: justify;
-    }
-    .btn {
-      background: #fcb900;
-      color: #111;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #fff;
-      color: #111;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #fcb900;
-      text-align: center;
-    }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .card {
-      background: #222;
-      padding: 2rem;
-      border-radius: 10px;
-      flex: 1 1 280px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #000;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
 </head>
 <body>
 
   <!-- Hero -->
   <header>
     <h1>Motorsport Trainer</h1>
-    <img src="welcome_image_2.jpg" alt="Welcome Image" width="500" height="300">
-    <p>Erőnléti edzés, ami a pályán is számít!</p>
+    <img src="welcome_image_2.jpg" alt="Welcome Image" width="500" height="300">
+    <p>Ne csak a géped legyen versenyképes.</p>
   </header>
 
   
@@ -107,42 +33,48 @@
   <section>
     <h2>Szolgáltatások</h2>
     <div class="cards">
-      <div class="card">💪 Nyakizom-erősítés</div>
-      <div class="card">🧠 Reakcióidő-fejlesztés</div>
-      <div class="card">🧱 Törzsstabilitás & core-erő fejlesztés</div>
-      <div class="card">🦵 Láberő és kitartás</div>
-      <div class="card">🫁 Állóképességi edzés motorsportos igényekre</div>
-      <div class="card">🧘 Mentális fókusz & stresszkezelés</div>
-      <div class="card">📲 Személyre szabott online edzéstervezés</div>
-      <div class="card">👥 Személyes konzultáció és technikai elemzés</div>
+      <div class="card"> 
+		    <div class="row"><h3>💪 Nyakizom-erősítés</h3></div>
+        <div class="row">A nyak stabilitása kritikus gyorsasági sportokban, különösen bukósisakos terhelésnél. Olyan ellenállásos és izometrikus gyakorlatokat alkalmazunk, amik a nyak körüli izomzatot célzottan fejlesztik, így csökken a sérülésveszély és nő az irányíthatóság extrém terhelés mellett is.</div>
+	    </div>
+      <div class="card">
+        <div class="row"><h3>🧠 Reakcióidő-fejlesztés</h3></div>
+        <div class="row">A motorsportokban a reakcióidő szó szerint versenyeket dönthet el. Speciális gyakorlatokkal – mint például fényre reagálás, neurotréning és reflexlabdás gyakorlatok – javítjuk az idegrendszeri válaszidőt. A cél: gyorsabban dönteni, gyorsabban cselekedni, akár 300 km/h-s tempónál is.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>🧱 Törzsstabilitás & core-erő fejlesztés</h3></div>
+        <div class="row">Erős „core” nélkül nincs pontos irányítás, gyors reakció és biztonságos testtartás. Funkcionális, dinamikus és statikus edzésekkel stabilizáljuk a medencét, gerincet és hasfalat. Ez nem esztétikai, hanem teljesítményfokozó eszköz a pályán.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>🦵 Láberő és kitartás</h3></div>
+        <div class="row">A fékpedál vagy motor váltó pontos működtetése nem csak technika, hanem erő kérdése is. Plyometrikus edzés, egyensúlygyakorlatok és robbanékonyságot fejlesztő feladatok segítenek a precíz kontrollban és az izomállóképesség fejlesztésében, még hosszabb futamokon is.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>🫁 Állóképességi edzés motorsportos igényekre</h3></div>
+        <div class="row">A pulzus kontrollja, a hosszú koncentráció fenntartása és az oxigénfelhasználás hatékonysága kulcsfontosságú. Az edzéseket szimuláció-alapú, zónás terheléssel állítjuk össze – például saját testsúlyos köredzések, HIIT és kerékpáros blokkok kombinációjával.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>🧘 Mentális fókusz & stresszkezelés</h3></div>
+        <div class="row">Egy versenyző nemcsak testileg, hanem mentálisan is edzett. Légzéskontroll, vizualizáció, figyelemgyakorlatok és versenyhelyzet-szimuláció segítenek a higgadt, fókuszált teljesítmény elérésében – különösen rajtnál vagy nehéz szituációkban.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>📲 Személyre szabott online edzéstervezés</h3></div>
+        <div class="row">Ha nem tudsz személyesen jelen lenni, akkor sem maradsz egyedül. Heti bontású, célorientált edzéstervet kapsz videós anyagokkal, instrukciókkal, ellenőrző kérdésekkel – folyamatos online konzultációs lehetőséggel. Ideális szezonra vagy off-season felkészüléshez.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>👥 Személyes konzultáció és technikai elemzés</h3></div>
+        <div class="row">Ha egy konkrét cél vagy probléma van (pl. egyensúly, fáradás, erővesztés), konzultáció során segítek elemezni a mozgásmintákat, a vezetési stílushoz igazított edzésprogrammal. Ez a szolgáltatás a versenyző teljesítményprofiljára szabott.</div>
+      </div>
+      
     </div>
   </section>
-
-<section>
-  <a href="#contact" class="btn">Időpontot foglalok</a>
-</section>
   
   <!-- Csomagok -->
   <section>
     <h2>Edzéscsomagok</h2>
     <div class="cards">
       <div class="card">
-        <h3>START</h3>
-        <p>Heti 2 edzésterv</p>
-        <p>Alap core + nyak</p>
-        <strong>29.900 Ft / hó</strong>
-      </div>
-      <div class="card">
-        <h3>PRO</h3>
-        <p>Heti 3-4 edzésterv</p>
-        <p>Online konzultáció</p>
-        <strong>49.900 Ft / hó</strong>
-      </div>
-      <div class="card">
-        <h3>RACE</h3>
-        <p>Versenynaptárhoz igazítva</p>
-        <p>Korlátlan támogatás</p>
-        <strong>74.900 Ft / hó</strong>
+		<img src="csomagok.jpg" alt="Welcome Image" width="500" height="300">
       </div>
     </div>
   </section>
@@ -166,6 +98,10 @@
       <button type="submit" class="btn">Küldés</button>
     </form>
   </section>
+
+<section>
+  <a href="#contact" class="btn">Időpontot foglalok</a>
+</section>
 
   <footer>
     © 2025 Motorsport Trainer – Minden jog fenntartva
