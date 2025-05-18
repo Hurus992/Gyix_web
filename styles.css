@@ -1,9 +1,4 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #111;
-  color: #fff;
-  line-height: 1.6;
 }
 
 header {
@@ -16,6 +11,9 @@ header {
 }
 
 body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  line-height: 1.6;
   background-color: #111111; /* Fallback color */
   background-image: url('megjeleno_hatter.png'); /* Replace with your image file */
   background-size: contain; /* Ensures the image covers the entire background */
@@ -90,7 +88,7 @@ h3 {
   background: #222;
   padding: 1rem; /* Adds padding around the cards */
   border-radius: 10px;
-  flex: 1 1 280px;
+  flex: 1 1 120px;
   justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
   gap: 1rem; /* Adds spacing between elements inside the card */
