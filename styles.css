@@ -67,6 +67,7 @@ h3 {
 }
 
 body {
+  background-color: #c52d2d; /* Fallback color */
   background-image: url('megjeleno_hatter.png'); /* Replace with your image file */
   background-size: contain; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
