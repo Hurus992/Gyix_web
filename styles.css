@@ -66,6 +66,15 @@ h3 {
   text-align: center;
 }
 
+body {
+  background-image: url('megjeleno_hatter.png'); /* Replace with your image file */
+  background-size: contain; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-position: center; /* Centers the image */
+  color: #fff; /* Adjust text color for better readability */
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -94,6 +103,19 @@ footer {
   padding: 2rem;
   background: #000;
   font-size: 0.9rem;
+}
+
+.sticky-image {
+  position: sticky; /* Keeps the image visible within its parent container */
+  top: 10px; /* Distance from the top of the viewport */
+  z-index: 10; /* Ensures it stays above other elements */
+}
+
+.fixed-image {
+  position: fixed; /* Keeps the image visible at all times */
+  bottom: 10px; /* Distance from the bottom of the viewport */
+  right: 10px; /* Distance from the right of the viewport */
+  z-index: 10; /* Ensures it stays above other elements */
 }
 
 @media (max-width: 768px) {
