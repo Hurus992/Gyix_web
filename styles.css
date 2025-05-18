@@ -84,14 +84,23 @@ body {
 }
 
 .card {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Ensures content is stacked vertically */
   background: #222;
-  padding: 1rem;
+  padding: 1rem; /* Adds padding around the cards */
   border-radius: 10px;
   flex: 1 1 280px;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  text-align: justify;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  gap: 1rem; /* Adds spacing between elements inside the card */
+  margin: 0 auto; /* Ensures the card itself is centered */
+  text-align: center; /* Centers text inside the card */
+  max-width: 1200px; /* Optional: Limits the width of the card */
+}
+
+.card h2 {
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Ensures the text is centered */
 }
 
 .card .row {
